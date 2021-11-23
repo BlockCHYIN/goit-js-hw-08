@@ -11,11 +11,6 @@ player.on('play', function () {
 
 player.on('timeupdate', throttle(onUpdate, 1000));
 function onUpdate(e) {
-    {
-    duration: 61.857
-    percent: 0.049
-    seconds: 3.034
-    }
     localStorage.setItem(STORAGE_TIME, e.seconds);
 };
 
